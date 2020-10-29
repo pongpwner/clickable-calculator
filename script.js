@@ -6,6 +6,7 @@ var previousNumber=0;
 var operate=0;
 var keep=false;
 var firstCase=true;
+var eq=false;
 
 
 function inputNumber(num){
@@ -53,7 +54,7 @@ function solve(){
         }
 
     } else if(operate==3){ //multiply
-        if(firstCase==true){  // needed to prevent automatically multiplying by zero on the first case
+        if(firstCase==true){  // first case
             previousNumber= currentNumber;
             currentNumber=null;
             screen.innerHTML=String(previousNumber);
@@ -75,7 +76,6 @@ function solve(){
         
         previousNumber /= currentNumber;
         currentNumber=null;
-        alert(previousNumber)
         screen.innerHTML=String(previousNumber);
         }
     }
@@ -120,6 +120,10 @@ function divide(){
 
 }
 function equate(){
-    solve()
+
+    solve();
+    currentNumber=previousNumber;
+    previousNumber=null;
+    firstCase=true;
     
 }
