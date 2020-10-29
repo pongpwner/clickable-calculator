@@ -10,31 +10,31 @@
     <div class="content-container">
         <div class="input-screen"></div>
         <div class="row row1">
-            <button class="clear" onclick="clear()">C</button>
+            <button class="clear" onclick="clearScreen()">C</button>
             <button class="backspace">B</button>
-            <button class="operator">/</button>
+            <button class="operator" onclick="divide()";>/</button>
         </div>
         <div class="row row2">
             <button class="number" onclick="inputNumber(this.innerHTML)">7</button>
             <button class="number" onclick="inputNumber(this.innerHTML)">8</button>
             <button class="number" onclick="inputNumber(this.innerHTML)">9</button>
-            <button class="operator">X</button>
+            <button class="operator" onclick="multiply()">X</button>
         </div>
         <div class="row row3">
             <button class="number" onclick="inputNumber(this.innerHTML)">4</button>
             <button class="number" onclick="inputNumber(this.innerHTML)">5</button>
             <button class="number" onclick="inputNumber(this.innerHTML)">6</button>
-            <button class="operator">-</button>
+            <button class="operator" onclick="subtract()">-</button>
         </div>
         <div class="row row4">
             <button class="number" onclick="inputNumber(this.innerHTML)">1</button>
             <button class="number" onclick="inputNumber(this.innerHTML)">2</button>
             <button class="number" onclick="inputNumber(this.innerHTML)">3</button>
-            <button class="operator">+</button>
+            <button class="operator" onclick="add()">+</button>
         </div>
         <div class="row row5">
             <button class="number zero"  onclick="inputNumber(this.innerHTML)">0</button>
-            <button class="operator equals">=</button>
+            <button class="operator equals" onclick="equate()">=</button>
         </div>
     </div>
     <script  src="script.js"></script>
